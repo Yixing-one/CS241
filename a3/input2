@@ -1,0 +1,5 @@
+Heroine: 
+.word 1
+Villain:
+.word -1
+.word Villain

@@ -1,0 +1,25 @@
+//
+// WLP4 Program to compute:
+//   x^n if 0 <= n
+//
+
+
+int wain(int x, int n){
+    int y = 1;
+    if (n >= 0) {
+        if(n == 0) {
+            x = 1;
+        } else {}
+        while(n > 1) {
+            if(n%2 == 0) {
+                x = x*x;
+                n = n/2;
+            } else{
+                y = x*y;
+                x = x*x;
+                n = (n-1)/2;
+            }
+        }
+    } else {}
+    return x*y;
+}

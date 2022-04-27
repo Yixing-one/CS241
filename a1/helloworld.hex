@@ -1,0 +1,5 @@
+.word 0x48656c6c ; H(48) e(65) l(6c) l(6c) 
+.word 0x6f0a6672 ; o(6f) newline(0a) f(66) r(72)
+.word 0x6f6d204c ; o(6f) m(6d) space(20) L(4c)
+.word 0x696e7578 ; i(69) n(6e) u(75) x(78)
+.word 0x2121210a ; !(21) !(21) !(21) newline(0a)

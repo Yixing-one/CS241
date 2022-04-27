@@ -1,0 +1,11 @@
+int proc(int c) { return c; }
+int wain(int* a, int b) {
+   int  c = 1;
+   int* d = NULL;
+   while(b != 0) {
+     b = b-proc(c);
+     println(*(a+b));
+   }
+   delete [] d;
+   return b;
+}

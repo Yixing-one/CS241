@@ -1,0 +1,150 @@
+start BOF procedures EOF
+BOF BOF
+procedures main
+main INT WAIN LPAREN dcl COMMA dcl RPAREN LBRACE dcls statements RETURN expr SEMI RBRACE
+INT int
+WAIN wain
+LPAREN (
+dcl type ID
+type INT
+INT int
+ID start
+COMMA ,
+dcl type ID
+type INT
+INT int
+ID decrement
+RPAREN )
+LBRACE {
+dcls dcls dcl BECOMES NUM SEMI
+dcls dcls dcl BECOMES NUM SEMI
+dcls
+dcl type ID
+type INT
+INT int
+ID startCopy
+BECOMES =
+NUM 0
+SEMI ;
+dcl type ID
+type INT
+INT int
+ID two
+BECOMES =
+NUM 2
+SEMI ;
+statements statements statement
+statements statements statement
+statements
+statement lvalue BECOMES expr SEMI
+lvalue ID
+ID startCopy
+BECOMES =
+expr term
+term factor
+factor ID
+ID start
+SEMI ;
+statement WHILE LPAREN test RPAREN LBRACE statements RBRACE
+WHILE while
+LPAREN (
+test expr LT expr
+expr term
+term factor
+factor NUM
+NUM 0
+LT <
+expr term
+term factor
+factor ID
+ID two
+RPAREN )
+LBRACE {
+statements statements statement
+statements statements statement
+statements statements statement
+statements statements statement
+statements
+statement lvalue BECOMES expr SEMI
+lvalue ID
+ID start
+BECOMES =
+expr term
+term factor
+factor ID
+ID startCopy
+SEMI ;
+statement WHILE LPAREN test RPAREN LBRACE statements RBRACE
+WHILE while
+LPAREN (
+test expr LT expr
+expr term
+term factor
+factor NUM
+NUM 0
+LT <
+expr term
+term factor
+factor ID
+ID start
+RPAREN )
+LBRACE {
+statements statements statement
+statements statements statement
+statements
+statement PRINTLN LPAREN expr RPAREN SEMI
+PRINTLN println
+LPAREN (
+expr term
+term factor
+factor ID
+ID start
+RPAREN )
+SEMI ;
+statement lvalue BECOMES expr SEMI
+lvalue ID
+ID start
+BECOMES =
+expr expr MINUS term
+expr term
+term factor
+factor ID
+ID start
+MINUS -
+term factor
+factor ID
+ID decrement
+SEMI ;
+RBRACE }
+statement PRINTLN LPAREN expr RPAREN SEMI
+PRINTLN println
+LPAREN (
+expr term
+term factor
+factor NUM
+NUM 0
+RPAREN )
+SEMI ;
+statement lvalue BECOMES expr SEMI
+lvalue ID
+ID two
+BECOMES =
+expr expr MINUS term
+expr term
+term factor
+factor ID
+ID two
+MINUS -
+term factor
+factor NUM
+NUM 1
+SEMI ;
+RBRACE }
+RETURN return
+expr term
+term factor
+factor ID
+ID start
+SEMI ;
+RBRACE }
+EOF EOF

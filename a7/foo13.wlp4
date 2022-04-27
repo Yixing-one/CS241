@@ -1,0 +1,13 @@
+int p0() { return 0; }
+int p1a(int* a) { return 0; }
+int p1b(int b) { return 0; }
+int p2a(int* c, int d) { return 0; }
+int p2b(int* e, int* f) { return 0; }
+int p3a(int g, int* h, int i) { return 0; }
+int p3b(int* j, int k, int* l) { return 0; }
+int p3c(int m, int n, int o) { return 0; }
+int p4(int p, int q, int* r, int* s) { return 0; }
+int p5(int t, int* u, int v, int* w, int x) { return 0; }
+int wain(int* y, int z) {
+  return 0;
+}

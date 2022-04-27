@@ -1,0 +1,216 @@
+11
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+-
+19
+start
+fail
+minus
+p0
+p1
+p2
+p10
+p11
+p12
+pn
+pnn
+pnnn
+m1
+m10
+m11
+m12
+mn
+mnn
+mnnn
+start
+16
+p0
+p1
+p2
+p10
+p11
+p12
+pn
+pnn
+pnnn
+m1
+m10
+m11
+m12
+mn
+mnn
+mnnn
+165
+start 0 p0
+start 1 p1
+start 2 pn
+start 3 pn
+start 4 pn
+start 5 pn
+start 6 pn
+start 7 pn
+start 8 pn
+start 9 pn
+p0 0 fail
+p0 1 fail
+p0 2 fail
+p0 3 fail
+p0 4 fail
+p0 5 fail
+p0 6 fail
+p0 7 fail
+p0 8 fail
+p0 9 fail
+p0 - fail 
+p1 0 p10
+p1 1 p11
+p1 2 p12
+p1 3 pnn
+p1 4 pnn
+p1 5 pnn
+p1 6 pnn
+p1 7 pnn
+p1 8 pnn
+p1 9 pnn
+p1 - fail
+pn 0 pnn
+pn 1 pnn
+pn 2 pnn
+pn 3 pnn
+pn 4 pnn
+pn 5 pnn
+pn 6 pnn
+pn 7 pnn
+pn 8 pnn
+pn 9 pnn
+pn - fail
+p10 0 pnnn
+p10 1 pnnn
+p10 2 pnnn
+p10 3 pnnn
+p10 4 pnnn
+p10 5 pnnn
+p10 6 pnnn
+p10 7 pnnn
+p10 8 pnnn
+p10 9 pnnn
+p10 - fail
+p11 0 pnnn
+p11 1 pnnn
+p11 2 pnnn
+p11 3 pnnn
+p11 4 pnnn
+p11 5 pnnn
+p11 6 pnnn
+p11 7 pnnn
+p11 8 pnnn
+p11 9 pnnn
+p11 - fail
+p12 0 pnnn
+p12 1 pnnn
+p12 2 pnnn
+p12 3 pnnn
+p12 4 pnnn
+p12 5 pnnn
+p12 6 pnnn
+p12 7 pnnn
+p12 8 fail
+p12 9 fail
+p12 - fail
+start - minus
+minus 0 fail
+minus 1 m1
+minus 2 mn
+minus 3 mn
+minus 4 mn
+minus 5 mn
+minus 6 mn
+minus 7 mn
+minus 8 mn
+minus 9 mn
+minus - fail
+m1 0 m10
+m1 1 m11
+m1 2 m12
+m1 3 mnn
+m1 4 mnn
+m1 5 mnn
+m1 6 mnn
+m1 7 mnn
+m1 8 mnn
+m1 9 mnn
+m1 - fail
+mn 0 mnn
+mn 1 mnn
+mn 2 mnn
+mn 3 mnn
+mn 4 mnn
+mn 5 mnn
+mn 6 mnn
+mn 7 mnn
+mn 8 mnn
+mn 9 mnn
+mn - fail
+m10 0 mnnn
+m10 1 mnnn
+m10 2 mnnn
+m10 3 mnnn
+m10 4 mnnn
+m10 5 mnnn
+m10 6 mnnn
+m10 7 mnnn
+m10 8 mnnn
+m10 9 mnnn
+m10 - fail
+m11 0 mnnn
+m11 1 mnnn
+m11 2 mnnn
+m11 3 mnnn
+m11 4 mnnn
+m11 5 mnnn
+m11 6 mnnn
+m11 7 mnnn
+m11 8 mnnn
+m11 9 mnnn
+m11 - fail
+m12 0 mnnn
+m12 1 mnnn
+m12 2 mnnn
+m12 3 mnnn
+m12 4 mnnn
+m12 5 mnnn
+m12 6 mnnn
+m12 7 mnnn
+m12 8 mnnn
+m12 9 fail
+m12 - fail
+mnn 0 fail
+mnn 1 fail
+mnn 2 fail
+mnn 3 fail
+mnn 4 fail
+mnn 5 fail
+mnn 6 fail
+mnn 7 fail
+mnn 8 fail
+mnn 9 fail
+mnn - fail
+fail 0 fail
+fail 1 fail
+fail 2 fail
+fail 3 fail
+fail 4 fail
+fail 5 fail
+fail 6 fail
+fail 7 fail
+fail 8 fail
+fail 9 fail
+fail - fail

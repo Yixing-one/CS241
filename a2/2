@@ -1,0 +1,74 @@
+lis $10
+.word 0
+lis $11
+.word 1
+lis $12
+.word -1
+lis $3
+.word 0
+lis $4 
+.word 4
+lis $5
+.word 0
+
+lis $20
+.word length 
+jalr $20
+
+jr $31
+
+
+length:
+add $3, $3, $11
+lis $28
+.word 0
+lis $29
+.word 0
+
+; check left node
+add $7, $5, $1
+mult $7, $4
+mflo $24
+add $24, $24, $1
+lw $8, 0($24)
+beq $8, $12, 10
+
+add $24, $5, $10  ;$24 = $5
+add $5, $8, $10  ;$5 = left node value
+add $25, $3, $10  ;$25 = $3
+add $3, $10, $10 ;$3 = 0
+lis $27
+.word length
+jalr $27
+add $28, $3, $10
+add $5, $24, $10
+add $3, $25, $10
+
+; check right node
+add $13, $5, $1
+add $13, $13, $1
+mult $13, $4
+mflo $24
+add $24, $24, $1
+lw $14, 0($24)
+beq $14, $12, 10
+
+add $24, $5, $10  ;$24 = $5
+add $5, $14, $10	  ;$5 = right node value
+add $25, $3, $10  ;$25 = $3
+add $3, $10, $10 ;$3 = 0
+lis $27
+.word length
+jalr $27
+add $29, $3, $10
+add $5, $24, $10
+add $3, $25, $10
+
+; update height
+slt $25, $28, $29
+beq $25, $10, 1
+add $3, $3, $29
+beq $25, $11, 1
+add $3, $3, $28
+jr $31
+

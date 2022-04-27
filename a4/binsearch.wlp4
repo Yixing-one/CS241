@@ -1,0 +1,30 @@
+//
+// WLP4 Program to search for an integer value in an array;
+// return the index if search value is in the array and -1 otherwise.
+//
+
+
+int binsearch(int* beginning, int size, int value){
+    int left = 0;
+    int right = 0;
+    int middle = 0;
+	int index = 0;
+	right = size - 1;
+	index = 0 - 1;
+	if(size > 0) {
+		while (left <= right) {
+			middle = (left + right) / 2;
+			if(*(beginning + middle) == value) {
+				index = middle;
+				left = right + 3;
+			} else {
+				if (*(beginning + middle) > value) {
+					right = middle - 1;
+				} else {
+					left = middle + 1;
+				}
+			}
+		}
+	} else {}
+     return index;
+}

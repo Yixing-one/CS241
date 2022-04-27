@@ -1,0 +1,4 @@
+int isPointer(int* id) { return 1; }
+int wain(int* a, int b) {
+  return isPointer(b);
+}
